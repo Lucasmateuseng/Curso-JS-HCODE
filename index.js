@@ -1,7 +1,9 @@
+/*
 //declaracao de variaveis
 var olamundo = "Olá mundo"
 let a = 10;
 const b = "10";
+*/
 
 /*
 //operadores de atribuição e comparação
@@ -66,9 +68,28 @@ switch (cor){
 */
 
 //Laços de repetição (For)
-
+/*
 let n = 7;
 
 for(let i = 0; i <= 10; i++){
     console.log(`${i} X ${n} = ${i*n}`); //template string
 }
+*/
+
+//Funções (nativa)
+function calc(x1, x2, operator) {
+    return eval(`${x1} ${operator} ${x2}`);
+}
+
+//Funções (anonima)
+(function (x1, x2, operator) {
+    return eval(`${x1} ${operator} ${x2}`);
+})(2, 5, "*");
+
+//Funções (arrow function)
+let calc = (x1, x2, operator) => {
+    return eval(`${x1} ${operator} ${x2}`);
+}
+
+let resultado = calc(2, 5, "*");
+console.log(resultado);
