@@ -76,7 +76,8 @@ for(let i = 0; i <= 10; i++){
 }
 */
 
-//Funções (nativa)
+/*
+//Funções (Experssão de função)
 function calc(x1, x2, operator) {
     return eval(`${x1} ${operator} ${x2}`);
 }
@@ -93,3 +94,44 @@ let calc = (x1, x2, operator) => {
 
 let resultado = calc(2, 5, "*");
 console.log(resultado);
+*/
+//Eventos
+/*
+window.addEventListener('focus', event => {
+    console.log("focus");
+});
+
+document.addEventListener('click', event => {
+    console.log("Click");
+});
+
+let agora = new Date();
+
+console.log(agora.toLocaleDateString("pt-br"));
+*/
+
+/*
+//Arrays
+
+let carros = ["palio 98", "Toro", "Uno", 10, true, new Date(), function(){}];
+
+carros.forEach(function(value, index) {
+    console.log(index, value);
+});
+*/
+/*
+//POO - programing orient objet
+
+let celular = function () {
+    this.cor = "prata";
+
+    this.ligar = function () {
+        console.log("Uma ligação");
+        return "Ligando";
+    }
+}
+
+let objeto = new celular();
+
+console.log(objeto.ligar());
+*/
